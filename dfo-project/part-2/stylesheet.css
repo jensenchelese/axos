@@ -24,10 +24,12 @@ h1 {
     display: inline-block;
 }
 form {
+    margin: 80px;
     font-weight: 800;
     width: 250px;
     background-color: white;
     border-radius: 1%;
+    padding: 15px;
     border: 1px grey solid;
 }
 .container {
@@ -35,11 +37,15 @@ form {
 }
 .fill {
     color: grey;
-    margin: 10px;
+    margin: 5px;
+}
+#case {
+    height: 50px;
 }
 #submit {
     background-color: #fc693d;
     color: white;
     border: 1px grey solid;
-    width: 85%;
+    margin: 5px;
+    width: 95%;
 }
