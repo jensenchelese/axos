@@ -1,0 +1,45 @@
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+}
+.top {
+    background-image: url("car.jpg");
+    height: 500px;
+}
+.header {
+    margin: 20px;
+}
+.col-sm-4 {
+    width: 20%;
+    margin: 5px;
+    border: 1px orangered solid;
+    padding: 5px;
+}
+.top-left {
+    display: inline-block;
+    width: 60%;
+}
+.injury-form {
+    display: inline-block;
+}
+form {
+    font-weight: 800;
+    width: 250px;
+    background-color: white;
+    border-radius: 1%;
+    border: 1px grey solid;
+}
+.container {
+    width: 90%;
+}
+.fill {
+    color: grey;
+    margin: 10px;
+}
+#submit {
+    background-color: #fc693d;
+    color: white;
+    border: 1px grey solid;
+    width: 85%;
+}
