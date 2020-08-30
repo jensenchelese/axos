@@ -27,6 +27,7 @@ class History extends React.Component {
     return (
       <Previous>
           <h2>Previous Searches</h2>
+          <p>Select name to view Albums</p>
           {this.props.artists.map((artist) => {
               return (
                   <Artist>

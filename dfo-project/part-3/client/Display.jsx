@@ -9,6 +9,7 @@ const Album = styled.div`
     margin-left: 25%;
    `;
 
+
 class Display extends React.Component {
   constructor(props) {
     super(props);
@@ -30,7 +31,7 @@ class Display extends React.Component {
           {this.props.albums.map((album) => {
               return (
                   <Album>
-                      <p>{album.strAlbum}</p>
+                      <h1>{album.strAlbum}</h1>
                       <p>{album.strDescriptionEN}</p>
                   
                   </Album>
