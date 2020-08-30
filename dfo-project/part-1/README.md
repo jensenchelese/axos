@@ -8,7 +8,7 @@
 </ul>
 </li>
 <li>I copy the html document into my own html document</li>
-<li>Then I open my html document and view the errors in the Dev Console </li>
+<li>Then I open my html document in the browser and view the errors in the Dev Console </li>
 <li>I go through each error and fix the urls that are not complete in my html document. Most links required 'https://www.beautystatcosmetics.com/' at the beginning so I was able to search the links and update all at once.</li>
 </ul>
 
