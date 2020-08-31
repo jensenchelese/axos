@@ -1,3 +1,5 @@
+//This file displays Previous Searches and enables API Request when user clicks on specific Artist's name
+
 import React from 'react';
 import styled from 'styled-components';
 
@@ -25,7 +27,6 @@ class History extends React.Component {
     super(props);
   }
   render() {
-      console.log('something', this.props.artists)
     return (
       <div>
       <Previous>

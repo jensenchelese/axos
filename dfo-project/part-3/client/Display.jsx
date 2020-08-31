@@ -1,3 +1,5 @@
+//This file displays the Artist's Album list when the user clicks on the Artists name
+
 import React from 'react';
 import styled from 'styled-components';
 

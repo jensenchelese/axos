@@ -1,3 +1,5 @@
+//This file handles the Search bar 
+
 import React from 'react';
 import styled from 'styled-components';
 

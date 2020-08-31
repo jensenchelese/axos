@@ -1,3 +1,5 @@
+//This file sets up the main layout of the website and pieces together the other individual pieces.
+
 import React from 'react';
 import Search from './Search.jsx';
 import Display from './Display.jsx';
