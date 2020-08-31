@@ -1,24 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 h1 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     width: 50%;
+    text-align: center;
 }
 .top {
     background-image: url("car.jpg");
-    height: 500px;
+    height: 40%;
+    width: 110%;
+    margin-left: -8px;
 }
 .header {
     margin: 20px;
 }
+.row {
+    width: 67%;
+    margin-left: 17%;
+}
 .col-sm-4 {
-    width: 20%;
-    margin: 5px;
+    width: 29%;
+    margin: 15px;
     border: 1px orangered solid;
     padding: 5px;
+    display: inline-block;
+    text-align: center;
 }
 .top-left {
     display: inline-block;
-    width: 60%;
+    width: 50%;
+    color: white;
+    margin-left: 15%;
 }
 .injury-form {
     display: inline-block;
@@ -32,12 +45,13 @@ form {
     padding: 15px;
     border: 1px grey solid;
 }
-.container {
-    width: 90%;
+.title {
+    text-align: center;
 }
 .fill {
     color: grey;
     margin: 5px;
+    width: 92%;
 }
 #case {
     height: 50px;
@@ -45,7 +59,107 @@ form {
 #submit {
     background-color: #fc693d;
     color: white;
-    border: 1px grey solid;
+    border: none;
     margin: 5px;
     width: 95%;
+    height: 30px;
+    font-size: 20px;
+}
+.numbers {
+    font-weight: 300;
+    color: black;
+    width: 77%;
+    margin-left: 12%;
+    font-size: 35px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border-bottom: grey 1px solid;
+}
+.info {
+    color: #fc693d;
+    font-weight: 700;
+}
+.underline {
+    width: 77%;
+    margin-left: 12%;
+    margin-bottom: 12px;
+    border-bottom: grey 1px solid;
+
+}
+.middle-title {
+    text-align: center;
+    width: 100%;
+    padding-top: 13px;
+    height: 15%;
+    color: white;
+    background-color: #309adb;
+}
+.perks {
+    width: 65%;
+    margin-left: 17%;
+    padding: 15px;
+    height: 40%;
+    border-bottom: 1px lightgrey solid;
+}
+.product {
+    display: inline-block;
+}
+.list {
+    display: inline-block;
+    width: 50%;
+    margin-left: 5%;
+    margin-top: -10px;
+}
+.individual-perks {
+    background-color: #f2f2f2;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    display: inline-block;
+}
+.details {
+    color: grey;
+    font-size: 10px;
+}
+footer {
+    background-color: #309adb;
+    position: fixed;
+    bottom: 0;
+    width: 110%;
+    color: white;
+    text-align: center;
+    margin-left: -10px;
+}
+@media only screen and (max-width: 500px) {
+    .top-left {
+        visibility: hidden;
+    }
+    .col-sm-4 {
+        width: 90%;
+    }
+    .row {
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 60px;
+    }
+    form {
+        position: absolute;
+        top: 40px;
+        left: 4%;
+        width: 80%;
+        margin-left: 10px;
+    }
+    .perks {
+        width: 90%;
+        margin-left: 0px;
+    }
+    .middle-title {
+        padding: 15px;
+    }
+    .list {
+        width: 100%;
+        margin-top: 5px;
+    }
 }
