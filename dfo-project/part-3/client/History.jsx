@@ -14,8 +14,10 @@ const Artist = styled.div`
     padding: 5px;
     margin: 10px;
     font-size: 20px;
+    background-color: white;
     width: 20%;
     display: inline-block;
+    text-align: center;
    `;
 
 class History extends React.Component {
@@ -25,17 +27,21 @@ class History extends React.Component {
   render() {
       console.log('something', this.props.artists)
     return (
+      <div>
       <Previous>
           <h2>Previous Searches</h2>
           <p>Select name to view Albums</p>
-          {this.props.artists.map((artist) => {
-              return (
-                  <Artist>
-                      <p onClick={() => {this.props.findArtist(artist)}}>{artist}</p>
-                  </Artist>
-              )
-          })}
       </Previous>
+      <div>
+        {this.props.artists.map((artist) => {
+            return (
+                <Artist>
+                    <p onClick={() => {this.props.findArtist(artist)}}>{artist}</p>
+                </Artist>
+            )
+        })}
+      </div>
+      </div>
     );
   }
 }

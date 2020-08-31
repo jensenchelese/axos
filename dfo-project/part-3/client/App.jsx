@@ -9,14 +9,16 @@ const Back = styled.div`
     font-family: Arial;
    `;
 const Header = styled.div`
-    background-color: #4a4948;
+    background-color: #12a0b3;
+    height: 80px;
     margin-left: -1%;
     margin-right: -1%;
     color: white;
-    text-align: center;
    `;
 const Title = styled.h1`
-   padding-top: 20px;
+   padding-left: 2%;
+   float: left;
+   width: 40%;
   `;
 
 class App extends React.Component  {
@@ -52,7 +54,6 @@ class App extends React.Component  {
             <Back>
                 <Header>
                     <Title>ARTIST SEARCH</Title>
-                    <p>Search Artist by Name</p>
                     <Search findArtist={this.addArtist}/>
                 </Header>
               <History artists={this.state.searches} findArtist={this.findArtist}/>

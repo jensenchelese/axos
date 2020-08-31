@@ -1,13 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const List = styled.div`
+    margin-left: 8%;
+`;
 const Album = styled.div`
     border: grey 1px solid;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
-    width: 50%;
-    margin-left: 25%;
+    width: 45%;
+    border: #bfbdbd 1px solid;
+    background-color: white;
+    margin: 5px;
+    display: inline-block;
    `;
+const Title = styled.h1`
+    font-size: 30px;
+    background-color: #d7f5fa;
+    color: black;
+    margin-top: 0px;
+    margin-left: -10px;
+    width: 100%;
+    padding: 10px;
+`;
+const Description = styled.p`
+    font-size: 10px;
+    color: grey;
+`;
 
 
 class Display extends React.Component {
@@ -27,17 +46,16 @@ class Display extends React.Component {
   }
   render() {
     return (
-      <div>
+      <List>
           {this.props.albums.map((album) => {
               return (
                   <Album>
-                      <h1>{album.strAlbum}</h1>
-                      <p>{album.strDescriptionEN}</p>
-                  
+                      <Title>{album.strAlbum}</Title>
+                      <Description>{album.strGenre}</Description>
                   </Album>
               )
           })}
-      </div>
+      </List>
     );
   }
 }

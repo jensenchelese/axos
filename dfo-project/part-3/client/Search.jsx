@@ -2,9 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SearchBar = styled.div`
-    width: 50%;
-    margin-left: 25%;
+    width: 30%;
     padding-bottom: 5px;
+    float: right;
+    margin-top: 1%;
+    margin-right: 2%;
 `;
 
 class Search extends React.Component {
@@ -12,7 +14,7 @@ class Search extends React.Component {
     super(props);
     console.log(props)
     this.state = {
-      value: ''
+      value: 'Search Artist Name'
     }
     this.onChange = (e) => this.setState( { value: e.target.value });
     this.onSubmit = (e) => {

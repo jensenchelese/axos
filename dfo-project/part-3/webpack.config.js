@@ -5,7 +5,7 @@ module.exports = {
   entry: './client/index.jsx',
   output: {
     filename: 'webpack.bundle.js',
-    path: path.resolve(__dirname, './part-3/public')
+    path: path.resolve(__dirname, './public')
   },
   module: {
     rules: [{
