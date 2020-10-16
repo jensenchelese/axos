@@ -1,0 +1,39 @@
+<div class="toolbar" role="banner">
+  <img
+    width="90"
+    alt="Axos Logo"
+    src="https://fec-photos-carousel.s3-us-west-1.amazonaws.com/axos-logo.png"
+  />
+  <h2>AXOS INVEST</h2>
+    <div class="spacer"></div>
+    <select [(ngModel)]="category" (ngModelChange)='onCategoryChange($event)' (click)='loadingIcon()'>
+      <option>AAPL</option>
+      <option>TSLA</option>
+      <option>MSFT</option>
+      <option>GOOG</option>
+    </select>
+</div>
+
+  <div class="content" role="main">
+    <h2>{{category}} STOCKS</h2>
+    <table class="table">
+      <tr class="titles">
+        <td>Date</td>
+        <td>Close Price</td>
+        <td>Volume</td>
+        <td>Percentage Change</td>
+      </tr>
+      <div class='loading' *ngIf=isLoading></div>
+      <tr *ngFor="let item of data; let i = index;" class="data">
+        <td>{{item[0]}}</td>
+        <td>${{item[1]["4. close"]}}</td>
+        <td>{{item[1]["5. volume"]}}</td>
+        <td>{{(((data[i+1][1]["4. close"])-(data[i][1]["4. close"]))/(data[i][1]["4. close"]))*-100}}%</td>
+      </tr>
+    </table>
+ </div>
+
+
+
+
+
